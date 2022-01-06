@@ -1,0 +1,58 @@
+{
+    "author":"Matthew J. Clemente",
+    "bugs":"",
+    "changelog":"",
+    "contributors":[],
+    "dependencies":{},
+    "description":"",
+    "devDependencies":{
+        "testbox":"^4.5.0+5"
+    },
+    "documentation":"",
+    "homepage":"",
+    "ignore":[],
+    "installPaths":{
+        "testbox":"testbox/"
+    },
+    "instructions":"",
+    "keywords":"urlbox, screenshot, api",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "location":"ForgeboxStorage",
+    "name":"Urlbox Screenshots",
+    "private":false,
+    "projectURL":"",
+    "repository":{
+        "type":"",
+        "URL":""
+    },
+    "scripts":{},
+    "shortDescription":"Generate urls for the urlbox.io screenshot-as-a-service API.",
+    "slug":"urlbox-screenshots",
+    "testbox":{
+        "bundles":"",
+        "directory":"tests.specs",
+        "excludes":"",
+        "labels":"",
+        "options":{},
+        "recurse":true,
+        "reporter":"",
+        "runner":[
+            {
+                "default":"http://127.0.0.1:57089/tests/runner.cfm"
+            }
+        ],
+        "testBundles":"",
+        "testSpecs":"",
+        "testSuites":"",
+        "verbose":true,
+        "watchDelay":500,
+        "watchPaths":"**.cfc"
+    },
+    "type":"modules",
+    "version":""
+}

@@ -1,34 +1,35 @@
 {
-    "author":"Matthew J. Clemente",
-    "bugs":"",
+    "author":"Matthew Clemente <mjclemente@gmail.com>",
+    "location":"mjclemente/urlbox-screenshots-cfml#v1.0.0",
+    "version":"1.0.0",
+    "bugs":"https://github.com/mjclemente/urlbox-screenshots-cfml/issues",
     "changelog":"",
     "contributors":[],
     "dependencies":{},
-    "description":"",
+    "description":"Generate urls for the urlbox.io screenshot-as-a-service API.",
     "devDependencies":{
         "testbox":"^4.5.0+5"
     },
-    "documentation":"",
-    "homepage":"",
+    "documentation":"https://github.com/mjclemente/urlbox-screenshots-cfml/blob/main/README.md",
+    "homepage":"https://github.com/mjclemente/urlbox-screenshots-cfml",
     "ignore":[],
     "installPaths":{
         "testbox":"testbox/"
     },
     "instructions":"",
-    "keywords":"urlbox, screenshot, api",
-    "license":[
-        {
-            "type":"",
-            "URL":""
-        }
+    "keywords":["urlbox", "screenshot", "api"],
+    "license": [
+      {
+        "type": "MIT",
+        "URL": "https://github.com/mjclemente/urlbox-screenshots-cfml/blob/main/LICENSE"
+      }
     ],
-    "location":"ForgeboxStorage",
     "name":"Urlbox Screenshots",
     "private":false,
-    "projectURL":"",
-    "repository":{
-        "type":"",
-        "URL":""
+    "projectURL":"https://github.com/mjclemente/urlbox-screenshots-cfml",
+    "repository": {
+      "type": "git",
+      "URL": "https://github.com/mjclemente/urlbox-screenshots-cfml"
     },
     "scripts":{},
     "shortDescription":"Generate urls for the urlbox.io screenshot-as-a-service API.",
@@ -53,6 +54,5 @@
         "watchDelay":500,
         "watchPaths":"**.cfc"
     },
-    "type":"modules",
-    "version":""
+    "type":"modules"
 }

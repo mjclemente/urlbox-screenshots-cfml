@@ -1,6 +1,6 @@
 # urlbox-screenshots
 
-Quickly generate screenshots using the urlbox.io screenshot as a service API.
+Quickly generate screenshots using the urlbox.io screenshot-as-a-service API.
 
 This project follows the example of the official Urlbox [node](https://github.com/urlbox/urlbox-screenshots-node) and [php](https://github.com/urlbox-io/urlbox-screenshots-php) repositories and  *generates the Urlbox urls, but does not actually make the request for the screenshot*.
 

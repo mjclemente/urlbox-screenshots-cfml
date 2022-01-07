@@ -53,6 +53,7 @@ component singleton {
     arguments.options.delete('format');
 
     for ( var option in arguments.options ){
+      option = lcase(option);
       if( isArray(arguments.options[option]) ){
         for( var el in arguments.options[option] ){
           queryParams.append("#option#=#encodeForURL(el)#");

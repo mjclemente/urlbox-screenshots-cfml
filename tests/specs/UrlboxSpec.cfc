@@ -13,6 +13,11 @@ component extends="testbox.system.BaseSpec"{
 
 	function run(){
 		describe( "The urlbox component", function(){
+      it("can generate unauthenticated urls", function(){
+        var unauthenticated_urlbox = new models.urlbox( api_key = 'API_KEY' );
+        var result = unauthenticated_urlbox.buildUrl( 'example.com' );
+				expect( result ).toBe( 'https://api.urlbox.io/v1/API_KEY/png?url=example.com' );
+			});
 			it("defaults to a png format", function(){
         var result = urlbox.buildUrl( 'example.com' );
 				expect( result ).toBe( 'https://api.urlbox.io/v1/API_KEY/b1b9b4362a5044ff18718d4d9a961044ed0cc815/png?url=example.com' );

@@ -73,7 +73,7 @@ component singleton {
   }
 
   private string function generateToken( required string input ){
-    return hmac( arguments.input, variables.api_secret, 'HMACSHA1' );
+    return lcase(hmac( arguments.input, variables.api_secret, 'HMACSHA1' ) );
   }
 
 }

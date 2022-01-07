@@ -49,11 +49,19 @@ component singleton {
     var encodedUrl = encodeForURL( arguments.url );
     var queryParams = ["url=#encodedUrl#"];
 
+    var format = options?.format ?: variables.default_format;
+    arguments.options.delete('format');
+
     for ( var option in arguments.options ){
-      queryParams.append("#option#=#arguments.options[option]#");
+      if( isArray(arguments.options[option]) ){
+        for( var el in arguments.options[option] ){
+          queryParams.append("#option#=#encodeForURL(el)#");
+        }
+      } else {
+        queryParams.append("#option#=#encodeForURL(arguments.options[option])#");
+      }
     }
     var queryString = queryParams.toList("&");
-    var format = options?.format ?: variables.default_format;
 
     if( len( variables.api_secret ) ){
       // // https://api.urlbox.io/v1/api-key/auth-token/format?options

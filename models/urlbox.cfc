@@ -73,6 +73,14 @@ component singleton {
     }
   }
 
+  public string function getBaseUrl() {
+    return variables.baseUrl;
+  }
+
+  public string function getRenderUrl() {
+    return variables.baseUrl & 'render';
+  }
+
   private string function generateToken( required string input ){
     return lcase(hmac( arguments.input, variables.api_secret, 'HMACSHA1' ) );
   }

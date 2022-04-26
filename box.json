@@ -1,58 +1,58 @@
 {
-    "author":"Matthew Clemente <mjclemente@gmail.com>",
-    "location":"mjclemente/urlbox-screenshots-cfml#v1.0.0",
-    "version":"1.0.0",
-    "bugs":"https://github.com/mjclemente/urlbox-screenshots-cfml/issues",
-    "changelog":"",
-    "contributors":[],
-    "dependencies":{},
-    "description":"Generate urls for the urlbox.io screenshot-as-a-service API.",
-    "devDependencies":{
-        "testbox":"^4.5.0+5"
-    },
-    "documentation":"https://github.com/mjclemente/urlbox-screenshots-cfml/blob/main/README.md",
-    "homepage":"https://github.com/mjclemente/urlbox-screenshots-cfml",
-    "ignore":[],
-    "installPaths":{
-        "testbox":"testbox/"
-    },
-    "instructions":"",
-    "keywords":["urlbox", "screenshot", "api"],
-    "license": [
+  "author": "Matthew Clemente <mjclemente@gmail.com>",
+  "location": "mjclemente/urlbox-screenshots-cfml#v1.1.0",
+  "version": "1.1.0",
+  "bugs": "https://github.com/mjclemente/urlbox-screenshots-cfml/issues",
+  "changelog": "",
+  "contributors": [],
+  "dependencies": {},
+  "description": "Generate urls for the urlbox.io screenshot-as-a-service API.",
+  "devDependencies": {
+    "testbox": "^4.5.0+5"
+  },
+  "documentation": "https://github.com/mjclemente/urlbox-screenshots-cfml/blob/main/README.md",
+  "homepage": "https://github.com/mjclemente/urlbox-screenshots-cfml",
+  "ignore": [],
+  "installPaths": {
+    "testbox": "testbox/"
+  },
+  "instructions": "",
+  "keywords": ["urlbox", "screenshot", "api"],
+  "license": [
+    {
+      "type": "MIT",
+      "URL": "https://github.com/mjclemente/urlbox-screenshots-cfml/blob/main/LICENSE"
+    }
+  ],
+  "name": "Urlbox Screenshots",
+  "private": false,
+  "projectURL": "https://github.com/mjclemente/urlbox-screenshots-cfml",
+  "repository": {
+    "type": "git",
+    "URL": "https://github.com/mjclemente/urlbox-screenshots-cfml"
+  },
+  "scripts": {},
+  "shortDescription": "Generate urls for the urlbox.io screenshot-as-a-service API.",
+  "slug": "urlbox-screenshots",
+  "testbox": {
+    "bundles": "",
+    "directory": "tests.specs",
+    "excludes": "",
+    "labels": "",
+    "options": {},
+    "recurse": true,
+    "reporter": "",
+    "runner": [
       {
-        "type": "MIT",
-        "URL": "https://github.com/mjclemente/urlbox-screenshots-cfml/blob/main/LICENSE"
+        "default": "http://127.0.0.1:57089/tests/runner.cfm"
       }
     ],
-    "name":"Urlbox Screenshots",
-    "private":false,
-    "projectURL":"https://github.com/mjclemente/urlbox-screenshots-cfml",
-    "repository": {
-      "type": "git",
-      "URL": "https://github.com/mjclemente/urlbox-screenshots-cfml"
-    },
-    "scripts":{},
-    "shortDescription":"Generate urls for the urlbox.io screenshot-as-a-service API.",
-    "slug":"urlbox-screenshots",
-    "testbox":{
-        "bundles":"",
-        "directory":"tests.specs",
-        "excludes":"",
-        "labels":"",
-        "options":{},
-        "recurse":true,
-        "reporter":"",
-        "runner":[
-            {
-                "default":"http://127.0.0.1:57089/tests/runner.cfm"
-            }
-        ],
-        "testBundles":"",
-        "testSpecs":"",
-        "testSuites":"",
-        "verbose":true,
-        "watchDelay":500,
-        "watchPaths":"**.cfc"
-    },
-    "type":"modules"
+    "testBundles": "",
+    "testSpecs": "",
+    "testSuites": "",
+    "verbose": true,
+    "watchDelay": 500,
+    "watchPaths": "**.cfc"
+  },
+  "type": "modules"
 }

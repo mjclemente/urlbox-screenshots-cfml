@@ -8,6 +8,7 @@ component singleton {
   public any function init(
       string api_key = '',
       string api_secret = '',
+      string webhook_secret = '',
       string default_format = 'png'
   ) {
 
@@ -16,7 +17,8 @@ component singleton {
       //map sensitive args to env variables or java system props
       var secrets = {
         'api_key': 'URLBOX_API_KEY',
-        'api_secret': 'URLBOX_API_SECRET'
+        'api_secret': 'URLBOX_API_SECRET',
+        'webhook_secret': 'URLBOX_WEBHOOK_SECRET'
       };
       var system = createObject( 'java', 'java.lang.System' );
 

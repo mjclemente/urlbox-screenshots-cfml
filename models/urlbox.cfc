@@ -83,8 +83,23 @@ component singleton {
     return variables.baseUrl & 'render';
   }
 
+  public boolean function verifyWebhookSignature( required string payload, required string signature ) {
+    // extract timestamp and token
+    var timestamp = arguments.signature.listFirst(',').listLast('=');
+    var token     = arguments.signature.listLast(',').listLast('=');
+
+    var generated_input = timestamp & "." & arguments.payload;
+    var generated_token = generateWebhookToken(generated_input);
+
+    return generated_token == token;
+  }
+
   private string function generateToken( required string input ){
-    return lcase(hmac( arguments.input, variables.api_secret, 'HMACSHA1' ) );
+    return lcase(hmac( arguments.input, variables.api_secret, 'HMACSHA256' ) );
+  }
+
+  private string function generateWebhookToken(required string input) {
+    return lCase(hmac(arguments.input, variables.webhook_secret, "HMACSHA256"));
   }
 
 }
